@@ -74,7 +74,7 @@ function countDown(){
 
     ///q1 if question is answered right
 
-    $("#a2").click(function () {
+    $("#q1a2").click(function () {
         correct();
         $("#q1-right").show(1000);
         function nextQ(){
@@ -82,22 +82,32 @@ function countDown(){
         $("#q2").show(2*1000);
         }
         setTimeout(nextQ,4*1000);
-
-        
-        
+})
+    ///q1 if question is answered wrong
     
-        
-      })
-
-    
-
-     ///q1 if question is answered wrong
-    
-     $("#a1,#a3,#a4").click(function () {
+     $("#q1a1,#q1a3,#q1a4").click(function () {
          incorrect()
          $("#q1-wrong").show(1000);
+         function nextQ(){
+            $("#q1-wrong").hide(1000);
+            $("#q2").show(2*1000);
+            }
+            setTimeout(nextQ,4*1000);
         
      })
+
+    ///q2 if question is answered wrong
+     $("#q2a2,#q2a3,#q2a4").click(function () {
+        incorrect()
+        $("#q2-wrong").show(1000);
+        function nextQ(){
+           $("#q2-wrong").hide(1000);
+           $("#q3").show(2*1000);
+           }
+           setTimeout(nextQ,4*1000);
+
+        })
+
 
 
 
