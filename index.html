@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h1  id="startMenu" class="text-center" hidden>ANCIENT GREEK TRIVIA</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button id="startBtn" hidden>BEGIN QUIZ</button>
+                <div class="jumbotron" hidden>
+            
+             <!-- QUETION 1: Right/Wrong Elements -->
+                <div id="q1" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q1: Which of these Greek city-states had a strong military culture?</h3>
+                    <hr>
+                    <br>
+                    <h3 id="a1">ATHENS</h3>
+                    <h3 id="a2">SPARTA</h3>
+                    <h3 id="a3">DELPHI</h3>
+                    <h3 id="a4">HYDRA</h3>
+                </div>
+
+                <!-- Right! -->
+                <div id="q1-right" hidden>
+                    <h2>CORRECT!</h2>
+                    <h2>Sparta had the most feared army in all of Ancient Greece.</h3>
+                    <hr>
+                    <br>
+                    <img src="./assets/images/sparta.jpg" class="img-thumbnail">
+                </div>
+                <!-- Wrong! -->
+                <div id="q1-wrong" hidden>
+                    <h2>INCORRECT!</h2>
+                    <h2>The correct answer was Sparta.</h2>
+                </div>
+
+             <!-- QUETION 2: Right/Wrong Elements -->
+                <div id="q2" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q3" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q4" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q5" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q6" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q7" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="q8" hidden>
+                    <h2>TIME REMAINING:<h2 id="timeLeft"></h2></h2>
+                    <h2> Q2: What is Life?</h2>
+                    <hr>
+                    <br>
+                    <h3 id="a1">death</h3>
+                    <h3 id="a2">dffdf</h3>
+                    <h3 id="a3">dfdf</h3>
+                    <h3 id="a4">dfdf</h3>
+                </div>
+
+                <div id="timeUp" hidden>
+                        <h3>OUT OF TIME!</h3>
+                        <hr>
+                        <br>
+                        <h4>Try Again!</h4>
+                        <button id="continueBtn">Continue?</button>
+                        
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</html>

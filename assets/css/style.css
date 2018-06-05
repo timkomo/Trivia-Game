@@ -1,0 +1,97 @@
+body {
+background-image: url(../images/artback.gif);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-family: 'Cinzel', serif;
+color: white;
+margin: 0 auto;
+}
+
+* {
+    cursor: url("../images/Normal\ Select.cur"), default;
+}
+
+h1 {
+    border:  groove white 6px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(31, 236, 236, 0.45);
+    margin: 75px 300px;
+
+}
+
+#startBtn {
+    background-color: rgba(31, 236, 236, 0.45);
+    padding:25px;
+    margin-top: 75px;
+    width: auto;
+    z-index:1;
+    font-size:24px;
+    
+    
+}
+
+
+
+#startBtn:active {
+    background-color: rgba(31, 236, 236, 0.95);
+    padding:25px;
+    margin-top: 75px;
+    width: auto;
+    z-index:1;
+    font-size:24px;
+}
+
+#continueBtn{
+    background-color: rgba(31, 236, 236, 0.45);
+    padding:25px;
+    margin-top: 75px;
+    width: auto;
+    z-index:1;
+    font-size:24px;
+}
+
+.jumbotron {
+    border:  groove white 6px;
+    background-color: rgba(31, 236, 236, 0.45);
+    padding:20px;
+    
+
+}
+
+h3{
+    font-size: 28px;
+    border:groove rgba(31, 236, 236, 0.00) 2px;
+    }
+
+h3:hover{
+     font-size: 28px;
+     background-color: rgba(31, 236, 236, 0.75);
+     border-radius: 10px/30px;
+     
+
+     
+
+
+    }    
+
+    h3:active{
+        font-size: 28px;
+        background-color: rgba(25, 189, 189, 0.95);
+        border-radius: 10px/30px;
+        border:  groove white 2px;
+        
+   
+   
+       } 
+
+
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        width:auto;
+        margin:75px auto;
+    }
+}
